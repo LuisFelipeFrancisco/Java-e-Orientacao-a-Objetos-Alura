@@ -1,3 +1,3 @@
 # Java e Orientação a Objetos
 
-## Este repositório contém os códigos-fonte utilizados no curso de Java e Orientação a Objetos da Alura.
+This repository contains the source code for the course "Java e Orientação a Objetos" by Alura
