@@ -32,3 +32,8 @@ public class Employee {
         this.salary = salary;
     }
 }
+
+/* Public keyword is used to make a class public
+ * Protected keyword is used to make a variable accessible to the child class
+ * Private keyword is used to make a variable accessible only to the class
+*/
