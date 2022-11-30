@@ -1,5 +1,5 @@
 public class Mananger extends Employee {
-    
+
     private int password;
 
     public boolean authenticate(int password) {
@@ -18,13 +18,11 @@ public class Mananger extends Employee {
 
     public double getBonus() {
         return super.getBonus() + super.getSalary();
-        //return super.getBonus();
     }
 
 }
 
-
 /*
  * extends keyword is used to inherit a class
  * super keyword is used to call the parent class constructor
-*/
+ */
