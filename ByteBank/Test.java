@@ -1,7 +1,8 @@
+
 public class Test {
     
     public static void main(String[] args) {
-        Account account = new Account(123, 123456);
+        CheckingAccount account = new CheckingAccount(123, 123456);
 
         Holder holder = new Holder();
         holder.setName("Felipe");
@@ -19,7 +20,7 @@ public class Test {
         System.out.println("Account Balance: "+ account.getBalance());
         System.out.println("--------------------");
 
-        Account account2 = new Account(123, 654321);
+        CheckingAccount account2 = new CheckingAccount(123, 654321);
         Holder holder2 = new Holder();
         holder2.setName("Luis");
         holder2.setCpf("456.789.123-00");
