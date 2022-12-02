@@ -1,9 +1,9 @@
 
-public class Admistrator extends Employee implements Authenticator {
+public class Manager extends Employee implements Authenticator {
 
     private Auth auth;
 
-    public Admistrator() {
+    public Manager() {
         this.auth = new Auth();
     }
 
@@ -17,9 +17,8 @@ public class Admistrator extends Employee implements Authenticator {
         return this.auth.authenticate(password);
     }
 
-    @Override
     public double getBonus() {
-        return super.getSalary() * 0.5;
+        return super.getSalary();
     }
 
 }
