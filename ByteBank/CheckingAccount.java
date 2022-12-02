@@ -7,7 +7,7 @@ public class CheckingAccount extends Account {
 
     @Override
     public void deposit(double value) {
-        this.balance += value;
+        super.balance += value;
     }
 
     @Override
@@ -17,6 +17,7 @@ public class CheckingAccount extends Account {
     }
 
 }
+
 
 /*
 Constructors are not inherited, so we need to create a constructor for CheckingAccount.
