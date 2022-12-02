@@ -8,11 +8,7 @@ public abstract class EmployeeAuthenticator extends Employee {
     }
 
     public boolean authenticate(int password) {
-        if (this.password == password) {
-            return true;
-        } else {
-            return false;
-        }
+        return !(this.password != password);
     }
 
 }
