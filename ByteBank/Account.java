@@ -1,25 +1,31 @@
 
-public class Account {
-	private double balance;
+public abstract class Account { 
+
+	protected double balance; 
 	private int agency;
 	private int number;
 	Holder holder;
-	private static int total;
+	private static int total = 0; 
 
-	public Account(int agency, int number) {
+	public Account(int agency, int number) {  //Constructor
 		Account.total++;
 		this.agency = agency;
 		this.number = number;
 		System.out.println("Creating an account...");
 	}
 
-	public void deposit(double value) {
+	public abstract void deposit(double value);
+	/* 
+	public void deposit(double value) { //Method
 		this.balance += value;
 	}
-
-	public void withdraw(double value) {
-		if (value > 0) {
+	*/
+	public boolean withdraw(double value) { //Method
+		if(this.balance >= value) {
 			this.balance -= value;
+			return true;
+		} else {
+			return false;
 		}
 	}
 
@@ -27,11 +33,9 @@ public class Account {
 		return this.balance;
 	}
 
-	public boolean transfer(double value, Account destination) {
-		if (this.balance >= value) {
-			this.balance -= value;
-			// destination.balance += value;
-			destination.deposit(value); // Using the deposit method.
+	public boolean transfer(double value, Account destination) { 
+		if (this.withdraw(value)) {
+			destination.deposit(value);
 			return true;
 		} else {
 			return false;
@@ -59,6 +63,9 @@ public class Account {
 /*
  * Creating a new object of the class Account.
  * A Class is a blueprint of an object.
+ * Abstract classes can't be instantiated.
+ * Abstract classes can have abstract methods.
+ * Abstract methods must be implemented in the subclasses.
  * Atributes are the characteristics of an object.
  * Methods are actions that an object can perform.
  * Parameters are values that are passed to the method.
@@ -66,6 +73,8 @@ public class Account {
  * void is a return type that means that the method does not return anything.
  * boolean is a return type that means that the method returns a boolean value.
  * (true or false)
+ * The keyword static is used to make a variable or method accessible without
+ * creating an object.
  * double is a return type that means that the method returns a double value.
  * Encapsulation is the process of hiding the implementation details of a class
  * from the user. (public, private, protected)
