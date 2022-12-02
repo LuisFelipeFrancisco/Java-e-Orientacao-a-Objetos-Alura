@@ -1,12 +1,11 @@
-public class Employee {
-    
+
+public abstract class Employee {
+
     private String name;
     private String cpf;
     private double salary;
 
-    public double getBonus() {
-        return this.salary * 0.2;
-    }
+    public abstract double getBonus();
 
     public String getName() {
         return name;
@@ -33,7 +32,9 @@ public class Employee {
     }
 }
 
-/* Public keyword is used to make a class public
+/*
+ * Public keyword is used to make a class public
  * Protected keyword is used to make a variable accessible to the child class
  * Private keyword is used to make a variable accessible only to the class
-*/
+ * Abstract keyword is used to make a class abstract
+ */
