@@ -1,5 +1,5 @@
 
-public class Methods {
+public class TestMethods {
     
     public static void main(String[] args) {
         CheckingAccount firstAccount = new CheckingAccount(123, 123456);
