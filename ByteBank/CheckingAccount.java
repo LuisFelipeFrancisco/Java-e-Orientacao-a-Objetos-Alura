@@ -1,5 +1,5 @@
 
-public class CheckingAccount extends Account {
+public class CheckingAccount extends Account implements Taxable {
 
     public CheckingAccount(int agency, int number) {
         super(agency, number);
@@ -16,12 +16,16 @@ public class CheckingAccount extends Account {
         return super.withdraw(valueToWithdraw);
     }
 
+    @Override
+    public double getTaxValue() {
+        return super.getBalance() * 0.01;
+    }
+
 }
 
-
 /*
-Constructors are not inherited, so we need to create a constructor for CheckingAccount.
-We can use the super() method to call the constructor of the superclass.
-The super() method must be the first line of the constructor.
-@Override is an annotation that tells the compiler that we are overriding a method.
-*/
+ * Constructors are not inherited, so we need to create a constructor for CheckingAccount.
+ * We can use the super() method to call the constructor of the superclass.
+ * The super() method must be the first line of the constructor.
+ * @Override is an annotation that tells the compiler that we are overriding a method.
+ */
