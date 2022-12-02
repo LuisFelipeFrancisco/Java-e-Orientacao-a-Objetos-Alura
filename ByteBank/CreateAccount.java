@@ -3,7 +3,7 @@ public class CreateAccount {
 
 	public static void main(String[] args) {
 
-		Account firstAccount = new Account(123, 123456);
+		CheckingAccount firstAccount = new CheckingAccount(123, 123456);
 		Holder holder = new Holder();
 		holder.setName("Felipe");
 		holder.setCpf("123.456.789-00");
@@ -16,11 +16,11 @@ public class CreateAccount {
 		firstAccount.getBalance();
 
 		System.out.println("--------------------");
-		System.out.println("Account Agency: "+ firstAccount.getAgency());
-		System.out.println("Account Number: "+ firstAccount.getNumber());
+		System.out.println("Account Agency: " + firstAccount.getAgency());
+		System.out.println("Account Number: " + firstAccount.getNumber());
 		firstAccount.setHolder(holder);
-		System.out.println("Account Holder: "+ firstAccount.holder.getName());
-		System.out.println("Account Balance: "+ firstAccount.getBalance());
+		System.out.println("Account Holder: " + firstAccount.holder.getName());
+		System.out.println("Account Balance: " + firstAccount.getBalance());
 		System.out.println("--------------------");
 	}
 
