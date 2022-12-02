@@ -1,16 +1,20 @@
 
 public class Manager extends Employee implements Authenticator {
 
-    private int password;
+    private Auth auth;
+
+    public Manager() {
+        this.auth = new Auth();
+    }
 
     @Override
     public void setPassword(int password) {
-        this.password = password;
+        this.auth.setPassword(password);
     }
 
     @Override
     public boolean authenticate(int password) {
-        return !(this.password != password);
+        return this.auth.authenticate(password);
     }
 
     public double getBonus() {
@@ -18,6 +22,7 @@ public class Manager extends Employee implements Authenticator {
     }
 
 }
+
 /*
  * extends keyword is used to inherit a class
  * super keyword is used to call the parent class constructor

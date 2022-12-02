@@ -1,16 +1,20 @@
 
 public class Admistrator extends Employee implements Authenticator {
 
-    private int password;
+    private Auth auth;
+
+    public Admistrator() {
+        this.auth = new Auth();
+    }
 
     @Override
     public void setPassword(int password) {
-        this.password = password;
+        this.auth.setPassword(password);
     }
 
     @Override
     public boolean authenticate(int password) {
-        return !(this.password != password);
+        return this.auth.authenticate(password);
     }
 
     @Override

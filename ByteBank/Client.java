@@ -1,16 +1,20 @@
 
 public class Client implements Authenticator {
 
-    private int password;
+    private Auth auth;
+
+    public Client() {
+        this.auth = new Auth();
+    }
 
     @Override
     public void setPassword(int password) {
-        this.password = password;
+        this.auth.setPassword(password);
     }
 
     @Override
     public boolean authenticate(int password) {
-        return !(this.password != password);
+        return this.auth.authenticate(password);
     }
     
 }
