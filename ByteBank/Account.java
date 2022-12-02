@@ -14,13 +14,9 @@ public abstract class Account {
 		System.out.println("Creating an account...");
 	}
 
-	public abstract void deposit(double value);
-	/* 
-	public void deposit(double value) { //Method
-		this.balance += value;
-	}
-	*/
-	public boolean withdraw(double value) { //Method
+	public abstract void deposit(double value); //Abstract method
+
+	public boolean withdraw(double value) { //Concrete method
 		if(this.balance >= value) {
 			this.balance -= value;
 			return true;
