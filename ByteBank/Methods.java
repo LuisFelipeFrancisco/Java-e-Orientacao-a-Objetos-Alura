@@ -1,7 +1,8 @@
+
 public class Methods {
     
     public static void main(String[] args) {
-        Account firstAccount = new Account(123, 123456);
+        CheckingAccount firstAccount = new CheckingAccount(123, 123456);
         //firstAccount.balance = 200;
         firstAccount.deposit(200);
         //System.out.println(firstAccount.balance);
