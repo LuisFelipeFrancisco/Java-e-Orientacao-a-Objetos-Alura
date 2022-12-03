@@ -18,7 +18,7 @@ public class Test {
         System.out.println("Account Balance: "+ account.getBalance());
         account.withdraw(50);
         System.out.println("Account Balance: "+ account.getBalance());
-        System.out.println("--------------------");
+        System.out.println("-------------------------");
 
         CheckingAccount account2 = new CheckingAccount(123, 654321);
         Holder holder2 = new Holder();
@@ -35,7 +35,7 @@ public class Test {
         System.out.println("Account Balance: "+ account2.getBalance());
         account2.deposit(250);
         System.out.println("Account Balance: "+ account2.getBalance());
-        System.out.println("--------------------");
+        System.out.println("-------------------------");
 
         System.out.println("Number of accounts: "+ Account.getTotal());
 

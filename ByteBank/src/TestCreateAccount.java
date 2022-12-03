@@ -15,16 +15,17 @@ public class TestCreateAccount {
 		firstAccount.deposit(100);
 		firstAccount.getBalance();
 
-		System.out.println("--------------------");
+		System.out.println("-------------------------");
 		System.out.println("Account Agency: " + firstAccount.getAgency());
 		System.out.println("Account Number: " + firstAccount.getNumber());
 		firstAccount.setHolder(holder);
 		System.out.println("Account Holder: " + firstAccount.holder.getName());
 		System.out.println("Account Balance: " + firstAccount.getBalance());
-		System.out.println("--------------------");
+		System.out.println("-------------------------");
 	}
 
 }
+
 /*
  * Creating a new object of the class Account.
  * Instantiating an object of the class Account.

@@ -30,4 +30,5 @@ public class Holder {
     public void setProfession(String profession) {
         this.profession = profession;
     }
+    
 }

@@ -10,4 +10,5 @@ public class BonusControl {
     public double getTotalBonus() {
         return totalBonus;
     }
+    
 }

@@ -30,6 +30,7 @@ public abstract class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+    
 }
 
 /*

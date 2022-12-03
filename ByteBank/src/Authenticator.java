@@ -11,4 +11,5 @@ public abstract interface Authenticator{
  * abstract keyword is used to create an abstract class
  * interface keyword is used to create an interface
  * interface is a contract that must be implemented by the classes that implements it
+ * Interface its a solution to the problem of multiple inheritance
  */
