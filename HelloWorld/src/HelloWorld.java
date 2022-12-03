@@ -1,4 +1,5 @@
-package Program01;
+package src;
+
 public class HelloWorld {
 
     public static void main(String[] args) {

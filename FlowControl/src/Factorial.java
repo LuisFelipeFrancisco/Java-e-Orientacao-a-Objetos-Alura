@@ -1,4 +1,4 @@
-package FlowControl;
+package src;
 
 //imprimir os fatoriais de 1 a 10
 

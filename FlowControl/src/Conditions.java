@@ -1,4 +1,4 @@
-package FlowControl;
+package src;
 
 public class Conditions {
     public static void main(String[] args) {

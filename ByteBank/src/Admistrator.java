@@ -25,7 +25,7 @@ public class Admistrator extends Employee implements Authenticator {
 }
 
 
-    /*
-    * extends keyword is used to inherit a class
-    * super keyword is used to call the parent class constructor
-    */
+/*
+* extends keyword is used to inherit a class
+* super keyword is used to call the parent class constructor
+*/

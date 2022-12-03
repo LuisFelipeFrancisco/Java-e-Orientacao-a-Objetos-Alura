@@ -1,4 +1,3 @@
-package Variables;
 
 public class VariableTests {
 	

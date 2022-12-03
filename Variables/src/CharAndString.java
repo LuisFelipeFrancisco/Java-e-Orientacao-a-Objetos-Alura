@@ -1,4 +1,3 @@
-package Variables;
 
 public class CharAndString {
     public static void main (String[] args){

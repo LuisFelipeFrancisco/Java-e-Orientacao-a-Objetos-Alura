@@ -1,4 +1,3 @@
-package Variables;
 
 public class PassParameter {
     public static void main(String[] args) {
