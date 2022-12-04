@@ -1,5 +1,5 @@
 
-public class CustomException extends RuntimeException {
+public class CustomException extends Exception {
 
     public CustomException(String msg) {
         super(msg);
