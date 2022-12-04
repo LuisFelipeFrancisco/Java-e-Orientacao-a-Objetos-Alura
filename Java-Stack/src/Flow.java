@@ -23,7 +23,7 @@ public class Flow {
         for (int i = 1; i <= 5; i++) {
             System.out.println(i);
             int a = i / 0;
-            Account acc = null;
+            AccountDemo acc = null;
             acc.deposit();
         }
         System.out.println("Ending Method 2");
