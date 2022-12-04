@@ -11,7 +11,11 @@ public class TestAccounts {
         cs.deposit(200.0);
         System.out.println("Savings account balance: " + cs.getBalance());
 
-        ca.transfer(10, cs);
+        try {
+            ca.transfer(10, cs);
+        } catch (InsufficientBalanceException e) {
+            System.out.println("Insufficient balance");
+        }
         System.out.println("Transfering 10 from checking to savings");
 
         System.out.println("Checking account balance: " + ca.getBalance());

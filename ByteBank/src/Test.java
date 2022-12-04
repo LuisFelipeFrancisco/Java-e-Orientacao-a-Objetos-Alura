@@ -16,7 +16,11 @@ public class Test {
         System.out.println("Account Number: "+ account.getNumber());
         System.out.println("Account Holder: "+ account.holder.getName());
         System.out.println("Account Balance: "+ account.getBalance());
-        account.withdraw(50);
+        try {
+            account.withdraw(50);
+        } catch (InsufficientBalanceException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("Account Balance: "+ account.getBalance());
         System.out.println("-------------------------");
 

@@ -1,41 +1,35 @@
 
-public abstract class Account { 
+public abstract class Account {
 
-	protected double balance; 
+	protected double balance;
 	private int agency;
 	private int number;
 	Holder holder;
-	private static int total = 0; 
+	private static int total = 0;
 
-	public Account(int agency, int number) {  //Constructor
+	public Account(int agency, int number) { // Constructor
 		Account.total++;
 		this.agency = agency;
 		this.number = number;
 		System.out.println("Creating an account...");
 	}
 
-	public abstract void deposit(double value); //Abstract method
+	public abstract void deposit(double value); // Abstract method
 
-	public boolean withdraw(double value) { //Concrete method
-		if(this.balance >= value) {
-			this.balance -= value;
-			return true;
-		} else {
-			return false;
+	public void withdraw(double value) throws InsufficientBalanceException { // Concrete method
+		if (this.balance < value) {
+			throw new InsufficientBalanceException("Insufficient balance");
 		}
+		this.balance -= value;
 	}
 
 	public double getBalance() {
 		return this.balance;
 	}
 
-	public boolean transfer(double value, Account destination) { 
-		if (this.withdraw(value)) {
-			destination.deposit(value);
-			return true;
-		} else {
-			return false;
-		}
+	public void transfer(double value, Account destination) throws InsufficientBalanceException {
+		this.withdraw(value);
+		destination.deposit(value);
 	}
 
 	public int getAgency() {
