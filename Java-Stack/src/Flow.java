@@ -5,7 +5,7 @@ public class Flow {
         System.out.println("Ini do main");
         try {
             method1();
-        } catch (ArithmeticException | NullPointerException ex) {
+        } catch (ArithmeticException | NullPointerException | CustomException ex) {
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
             ex.printStackTrace();
@@ -20,13 +20,8 @@ public class Flow {
 
     private static void method2() {
         System.out.println("Starting Method 2");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(i);
-            int a = i / 0;
-            AccountDemo acc = null;
-            acc.deposit();
-        }
-        System.out.println("Ending Method 2");
+        throw new CustomException("Something went wrong");
+        // System.out.println("Ending Method 2");
     }
 
 }
