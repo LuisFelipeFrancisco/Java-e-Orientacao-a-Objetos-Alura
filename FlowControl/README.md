@@ -1,3 +1,3 @@
-# Flow Control in Java
+# Control Flow in Java
 
-This is a simple Java project that demonstrates the use of flow control.
+This is a collection of examples of control flow in Java.

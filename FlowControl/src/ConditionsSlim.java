@@ -11,4 +11,5 @@ public class ConditionsSlim {
             System.out.println("You can't enter the club");
         }
     }
+    
 }
