@@ -15,4 +15,5 @@ public class Converting{
         double total = value1 + value2;
         System.out.println(total);
     }
+    
 }

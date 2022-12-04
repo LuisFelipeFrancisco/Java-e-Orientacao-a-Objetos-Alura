@@ -16,4 +16,5 @@ public class VariableTests {
 		System.out.println("Age is: "+ age + ", congrats!!");
 
 	}
+	
 }
