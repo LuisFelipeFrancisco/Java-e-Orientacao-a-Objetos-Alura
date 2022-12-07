@@ -20,7 +20,7 @@ public class TestAccounts {
         } catch (InsufficientBalanceException e) {
             System.out.println("Insufficient balance");
         }
-        System.out.println("Transfering 10 from checking to savings");
+        System.out.println("Transferring 10 from checking to savings");
 
         System.out.println("Checking account balance: " + ca.getBalance());
         System.out.println("Savings account balance: " + cs.getBalance());

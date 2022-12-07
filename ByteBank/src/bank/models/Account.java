@@ -57,7 +57,7 @@ public abstract class Account {
  * Abstract classes can't be instantiated.
  * Abstract classes can have abstract methods.
  * Abstract methods must be implemented in the subclasses.
- * Atributes are the characteristics of an object.
+ * Attributes are the characteristics of an object.
  * Methods are actions that an object can perform.
  * Parameters are values that are passed to the method.
  * The keyword this is a reference to the object itself.

@@ -20,7 +20,7 @@ public class TestReferences {
 
         BonusControl bonusControl = new BonusControl(); 
         bonusControl.register(manager);
-        System.out.println("Mananger Bonus: " + manager.getBonus());
+        System.out.println("Manager Bonus: " + manager.getBonus());
         bonusControl.register(editor);
         System.out.println("Editor Bonus: " + editor.getBonus());
         bonusControl.register(designer);

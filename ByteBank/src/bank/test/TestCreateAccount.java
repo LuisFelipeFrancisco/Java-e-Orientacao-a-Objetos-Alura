@@ -32,7 +32,7 @@ public class TestCreateAccount {
 /*
  * Creating a new object of the class Account.
  * Instantiating an object of the class Account.
- * Accesing this object through the variable.
+ * Accessing this object through the variable.
  * 
  * An object is an instance of a class.
  * I can create as many objects as i want from a class.

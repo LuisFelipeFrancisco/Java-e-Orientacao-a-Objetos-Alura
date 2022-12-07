@@ -1,10 +1,10 @@
 package models;
 
-public class Admistrator extends Employee implements Authenticator {
+public class Administrator extends Employee implements Authenticator {
 
     private Auth auth;
 
-    public Admistrator() {
+    public Administrator() {
         this.auth = new Auth();
     }
 
