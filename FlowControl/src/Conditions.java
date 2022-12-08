@@ -1,6 +1,7 @@
 package src;
 
 public class Conditions {
+    
     public static void main(String[] args) {
         int age = 16;
         int companion = 1;
