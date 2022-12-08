@@ -25,3 +25,10 @@ replay_pid*
 
 # VS Code
 .vscode
+
+/bin/
+
+/doc/
+
+.classpath
+.project
