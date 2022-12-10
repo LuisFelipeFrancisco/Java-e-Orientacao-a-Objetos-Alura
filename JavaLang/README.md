@@ -86,3 +86,12 @@ String str = "Hello World";
 boolean contains = str.contains("Hello");
 System.out.println(contains); // true
 ```
+
+### .split
+
+```java
+String str = "Hello World";
+String[] arr = str.split(" ");
+System.out.println(arr[0]); // Hello
+System.out.println(arr[1]); // World
+```

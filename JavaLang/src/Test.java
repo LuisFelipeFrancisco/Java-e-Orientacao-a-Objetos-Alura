@@ -53,9 +53,11 @@ public class Test {
         boolean containsli = name.contains("li");
         System.out.println(containsli);
 
+        String fullname = "Luis Felipe";
+        System.out.println(fullname);
+        String[] names = fullname.split(" ");
+        System.out.println(names[0]);
+        System.out.println(names[1]);
+
     }
 }
-
-/*
- * Strings are immutable, so when you call a method on a String, it will return a new String.
- */
