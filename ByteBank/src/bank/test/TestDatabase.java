@@ -9,7 +9,7 @@ import models.SavingsAccount;
 public class TestDatabase {
     public static void main(String[] args) {
         
-        ArrayList database = new ArrayList();
+        ArrayList<Account> database = new ArrayList<Account>();
 
         Account cc1 = new CheckingAccount(123, 123);
         database.add(cc1);
@@ -25,7 +25,7 @@ public class TestDatabase {
 
         System.out.println("Number of elements: " + database.size());
 
-        Account reference = (Account) database.get(0);
+        Account reference = database.get(0);
         System.out.println(reference.getNumber());
 
         for (int i = 0; i < database.size(); i++) {
@@ -36,9 +36,8 @@ public class TestDatabase {
         database.remove(3);
         System.out.println("Number of elements: " + database.size());
 
-        for (int i = 0; i < database.size(); i++) {
-            Object ref = database.get(i);
-            System.out.println(ref);
+        for (Account account : database) {
+            System.out.println(account);
         }
     }
 
