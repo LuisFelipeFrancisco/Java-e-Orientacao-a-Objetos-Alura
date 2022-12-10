@@ -22,6 +22,11 @@ public class CheckingAccount extends Account implements Taxable {
         return super.getBalance() * 0.01;
     }
 
+    @Override
+    public String toString() {
+        return "Checking Account - " + super.toString();
+    }
+
 }
 
 /*

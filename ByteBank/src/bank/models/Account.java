@@ -98,6 +98,15 @@ public abstract class Account {
 		return Account.total;
 	}
 
+	/**
+	 * The toString() method returns a string representation of the object
+	 * 
+	 * @return The agency, number, and balance of the account.
+	 */
+	public String toString() {
+		return "Agency: " + this.agency + ", Number: " + this.number + ", Balance: " + this.balance;
+	}
+
 }
 
 /*
