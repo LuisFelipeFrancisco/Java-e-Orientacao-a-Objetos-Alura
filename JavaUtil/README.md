@@ -1,92 +1,50 @@
 # Java.util
 ## java.util is a collection of Java utilities for the Java programming language.
 
-## Arrays
+## ArrayList
 
-### Arrays.length
-```java
-int[] array = {1, 2, 3, 4, 5};
-int length = array.length;
-System.out.println(length);
-```
-Output:
-```java
-5
-```
+ArrayList is a resizable array. Elements can be added and removed from an ArrayList whenever you want.
 
-### Arrays.toString()
+### .add()
+
+The add() method adds an element to the ArrayList.
+
 ```java
-int[] array = {1, 2, 3, 4, 5};
-System.out.println(Arrays.toString(array));
-```
-Output:
-```
-[1, 2, 3, 4, 5]
+ArrayList<String> cars = new ArrayList<String>();
+cars.add("Volvo");
+cars.add("BMW");
+cars.add("Ford");
+cars.add("Mazda");
 ```
 
-### Arrays.copyOf()
+### .remove()
+
+The remove() method removes the element at the specified position in this list.
+
 ```java
-int[] array = {1, 2, 3, 4, 5};
-int[] copy = Arrays.copyOf(array, array.length);
-System.out.println(Arrays.toString(copy));
-```
-Output:
-```
-[1, 2, 3, 4, 5]
+cars.remove(0);
 ```
 
-### Arrays.copyOfRange()
+### .size()
+
+The size() method returns the number of elements in this list.
+
 ```java
-int[] array = {1, 2, 3, 4, 5};
-int[] copy = Arrays.copyOfRange(array, 1, 4);
-System.out.println(Arrays.toString(copy));
-```
-Output:
-```
-[2, 3, 4]
+cars.size();
 ```
 
-### Arrays.fill()
+### .get()
+
+The get() method returns the element at the specified position in this list.
+
 ```java
-int[] array = new int[5];
-Arrays.fill(array, 1);
-System.out.println(Arrays.toString(array));
-```
-Output:
-```
-[1, 1, 1, 1, 1]
+cars.get(0);
 ```
 
-### Arrays.sort()
-```java
-int[] array = {5, 4, 3, 2, 1};
-Arrays.sort(array);
-System.out.println(Arrays.toString(array));
-```
-Output:
-```
-[1, 2, 3, 4, 5]
-```
+### .clear()
 
-### Arrays.binarySearch()
-```java
-int[] array = {1, 2, 3, 4, 5};
-int index = Arrays.binarySearch(array, 3);
-System.out.println(index);
-```
-Output:
-```
-2
-```
+The clear() method removes all of the elements from this list.
 
-### Arrays.equals()
 ```java
-int[] array1 = {1, 2, 3, 4, 5};
-int[] array2 = {1, 2, 3, 4, 5};
-boolean equals = Arrays.equals(array1, array2);
-System.out.println(equals);
-```
-Output:
-```
-true
+cars.clear();
 ```
