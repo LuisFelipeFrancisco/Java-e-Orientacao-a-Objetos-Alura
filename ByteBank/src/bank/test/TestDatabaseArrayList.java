@@ -77,22 +77,31 @@ public class TestDatabaseArrayList {
         }
 
         System.out.println("Sorting by Holder...");
-        database.sort(new AccountHolderComparator());
-        for (Account account : database) {
-            System.out.println(account + " Holder: " + account.holder.getName());
-        }
+        Comparator<Account> comparator = (c1, c2) -> {
+            String name1 = c1.holder.getName();
+            String name2 = c1.holder.getName();
+            return name1.compareTo(name2);
+        };
+        database.sort(comparator);
+        database.forEach( (account) -> System.out.println(account + " Holder: " + account.holder.getName()) );
 
         System.out.println("Sorting by Balance...");
-        database.sort(new AccountBalanceComparator());
+        database.sort(new Comparator<Account>() {
+            @Override
+            public int compare(Account c1, Account c2) {
+                return Double.compare(c1.getBalance(), c2.getBalance());
+            }
+        });
         for (Account account : database) {
             System.out.println(account);
         }
 
-        Collections.sort(database, new AccountNumberComparator());
-        System.out.println("Sorting by number...");
-        for (Account account : database) {
-            System.out.println(account);
-        }
+        Collections.sort(database, new Comparator<Account>() {
+            @Override
+            public int compare(Account c1, Account c2) {
+                return Integer.compare(c1.getNumber(), c2.getNumber());
+            }
+        });
     }
 
 }
@@ -102,26 +111,6 @@ class AccountNumberComparator implements Comparator<Account> {
     @Override
     public int compare(Account c1, Account c2) {
         return Integer.compare(c1.getNumber(), c2.getNumber());
-    }
-
-}
-
-class AccountHolderComparator implements Comparator<Account> {
-
-    @Override
-    public int compare(Account c1, Account c2) {
-        String name1 = c1.holder.getName();
-        String name2 = c2.holder.getName();
-        return name1.compareTo(name2);
-    }
-
-}
-
-class AccountBalanceComparator implements Comparator<Account> {
-
-    @Override
-    public int compare(Account c1, Account c2) {
-        return Double.compare(c1.getBalance(), c2.getBalance());
     }
 
 }
