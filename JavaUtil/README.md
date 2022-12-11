@@ -114,3 +114,22 @@ Wrapper classes are used to convert primitive data types into objects.
 | long           | Long          |
 | float          | Float         |
 | double         | Double        |
+
+## Anonymous Classes
+
+Anonymous classes enable you to make your code more concise. They enable you to declare and instantiate a class at the same time. They are like local classes except that they do not have a name.
+
+```java
+new Person() {
+    public void eat() {
+        System.out.println("nice fruits");
+    }
+};
+```
+## Lambda Expressions
+
+Lambda expressions are used primarily to define inline implementation of a functional interface, i.e., an interface with a single method only.
+
+```java
+Test t = () -> System.out.println("Hello World");
+```
