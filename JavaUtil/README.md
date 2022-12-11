@@ -65,6 +65,22 @@ The equals() method returns true if the two specified lists are equal to one ano
 cars.equals(cars);
 ```
 
+### .isEmpty()
+
+The isEmpty() method returns true if this list contains no elements.
+
+```java
+cars.isEmpty();
+```
+
+### .sort()
+
+The sort() method sorts the elements in this list into ascending order, according to the natural ordering of its elements.
+
+```java
+cars.sort();
+```
+
 ## LinkedList
 
 LinkedList is a linear collection that supports element insertion and removal at both ends.
