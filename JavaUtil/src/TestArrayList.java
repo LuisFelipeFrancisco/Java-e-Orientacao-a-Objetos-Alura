@@ -39,6 +39,11 @@ public class TestArrayList {
             System.out.println(s);
         }
 
+        boolean isFound = list.contains("F");
+        System.out.println("F is found: " + isFound);
+
+
+
     }
     
 }

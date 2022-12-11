@@ -107,6 +107,27 @@ public abstract class Account {
 		return "Agency: " + this.agency + ", Number: " + this.number + ", Balance: " + this.balance;
 	}
 
+	/**
+	 * If the agency and number of the current object are equal to the agency and number of the object
+	 * passed as a parameter, then the function returns true. Otherwise, it returns false
+	 * 
+	 * @param ref The object to compare with.
+	 */
+	@Override
+	public boolean equals(Object ref) {
+		Account other = (Account) ref;
+
+		if (this.agency != other.agency) {
+			return false;
+		}
+
+		if (this.number != other.number) {
+			return false;
+		}
+
+		return true;
+	}
+
 }
 
 /*

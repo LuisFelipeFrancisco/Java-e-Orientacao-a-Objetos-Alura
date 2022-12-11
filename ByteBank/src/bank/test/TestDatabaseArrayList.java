@@ -6,7 +6,7 @@ import models.Account;
 import models.CheckingAccount;
 import models.SavingsAccount;
 
-public class TestDatabase {
+public class TestDatabaseArrayList {
     public static void main(String[] args) {
         
         ArrayList<Account> database = new ArrayList<Account>();
@@ -38,6 +38,17 @@ public class TestDatabase {
 
         for (Account account : database) {
             System.out.println(account);
+        }
+
+        Account cc3 = new CheckingAccount(123, 123);
+        
+        boolean exists = database.contains(cc3);
+        System.out.println("This account already exists? " + exists);
+
+        for (Account account : database) {
+            if (account.equals(cc3)) {
+                System.out.println("This account already exists.");
+            }
         }
     }
 

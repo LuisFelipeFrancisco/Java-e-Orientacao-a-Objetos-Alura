@@ -48,3 +48,24 @@ The clear() method removes all of the elements from this list.
 ```java
 cars.clear();
 ```
+
+### .contains()
+
+The contains() method returns true if this list contains the specified element.
+
+```java
+cars.contains("Volvo");
+```
+
+### .equals()
+
+The equals() method returns true if the two specified lists are equal to one another.
+
+```java
+cars.equals(cars);
+```
+
+
+## HashMap
+
+HashMap is a collection of key-value pairs, and it is also known as a hash table.
