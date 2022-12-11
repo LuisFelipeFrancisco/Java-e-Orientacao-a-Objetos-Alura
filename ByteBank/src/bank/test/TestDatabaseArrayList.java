@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 import models.Account;
@@ -83,6 +84,12 @@ public class TestDatabaseArrayList {
 
         System.out.println("Sorting by Balance...");
         database.sort(new AccountBalanceComparator());
+        for (Account account : database) {
+            System.out.println(account);
+        }
+
+        Collections.sort(database, new AccountNumberComparator());
+        System.out.println("Sorting by number...");
         for (Account account : database) {
             System.out.println(account);
         }

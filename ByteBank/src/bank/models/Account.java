@@ -7,7 +7,7 @@ package models;
  * @version 1.0.0
  * @since 1.0.0
  */
-public abstract class Account {
+public abstract class Account implements Comparable<Account> {
 
 	protected double balance;
 	private int agency;
@@ -126,6 +126,18 @@ public abstract class Account {
 		}
 
 		return true;
+	}
+
+	/**
+	 * The compareTo() method compares two objects and returns a negative integer, zero, or a positive
+	 * integer as this object is less than, equal to, or greater than the specified object
+	 * 
+	 * @param other The other account to compare to.
+	 * @return The number of the account.
+	 */
+	@Override
+	public int compareTo(Account other) {
+		return Integer.compare(this.number, other.number);
 	}
 
 }
