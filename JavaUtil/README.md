@@ -65,7 +65,12 @@ The equals() method returns true if the two specified lists are equal to one ano
 cars.equals(cars);
 ```
 
+## LinkedList
 
-## HashMap
+LinkedList is a linear collection that supports element insertion and removal at both ends.
+The linked list have the same methods as ArrayList.
 
-HashMap is a collection of key-value pairs, and it is also known as a hash table.
+## Vector
+
+Vector is a legacy class that is similar to ArrayList, but with two differences: 
+Vector is synchronized and contains many legacy methods that are not part of the collections framework.
