@@ -74,3 +74,27 @@ The linked list have the same methods as ArrayList.
 
 Vector is a legacy class that is similar to ArrayList, but with two differences: 
 Vector is synchronized and contains many legacy methods that are not part of the collections framework.
+
+## AutoBoxing and Unboxing
+
+AutoBoxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called unboxing.
+
+```java
+Integer myInt = 5; // boxes int to an Integer object
+int myInt = myInt; // unboxes the Integer to a int
+```
+
+## Wrapper Classes
+
+Wrapper classes are used to convert primitive data types into objects.
+
+| Primitive Type | Wrapper Class |
+|----------------|---------------|
+| boolean        | Boolean       |
+| char           | Character     |
+| byte           | Byte          |
+| short          | Short         |
+| int            | Integer       |
+| long           | Long          |
+| float          | Float         |
+| double         | Double        |
