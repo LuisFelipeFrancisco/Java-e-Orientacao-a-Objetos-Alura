@@ -11,7 +11,7 @@ public class WriteTest {
         OutputStreamWriter osw = new OutputStreamWriter(fis);
         BufferedWriter bw = new BufferedWriter(osw);
 
-        bw.write("Luis Felipe Francisco Fermino Ferreia");
+        bw.write("name name name name name name");
 
         bw.close();
 
