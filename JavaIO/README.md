@@ -61,3 +61,19 @@ Java.io supports the following file opening options:
 * `SYNC` - Synchronize the file's content with the underlying storage device.
 * `DSYNC` - Synchronize the file's content and metadata with the underlying storage device.
 
+### FileWriter
+
+Java.io also supports a FileWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+
+```java
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Example {
+    public static void main(String[] args) throws IOException {
+        FileWriter writer = new FileWriter("test.txt");
+        writer.write("Hello World!");
+        writer.close();
+    }
+}
+```
