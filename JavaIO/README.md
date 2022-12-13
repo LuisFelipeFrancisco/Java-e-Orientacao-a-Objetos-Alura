@@ -63,7 +63,7 @@ Java.io supports the following file opening options:
 
 ### FileWriter
 
-Java.io also supports a FileWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+FileWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
 
 ```java
 import java.io.FileWriter;
@@ -79,7 +79,7 @@ public class Example {
 ```
 ### PrintStream
 
-Java.io also supports a PrintStream class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+PrintStream class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
 
 ```java
 import java.io.PrintStream;
@@ -96,7 +96,7 @@ public class Example {
 
 ### PrintWriter
 
-Java.io also supports a PrintWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+PrintWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
 
 ```java
 import java.io.PrintWriter;
@@ -112,7 +112,7 @@ public class Example {
 ```
 ### System.lineSeparator()
 
-Java.io also supports a System.lineSeparator() method that can be used to get the system's line separator.
+System.lineSeparator() method that can be used to get the system's line separator.
 
 ```java
 import java.io.System;
@@ -126,7 +126,7 @@ public class Example {
 ```
 ### System.currentTimeMillis()
 
-Java.io also supports a System.currentTimeMillis() method that can be used to get the system's current time in milliseconds.
+System.currentTimeMillis() method that can be used to get the system's current time in milliseconds.
 
 ```java
 import java.io.System;
