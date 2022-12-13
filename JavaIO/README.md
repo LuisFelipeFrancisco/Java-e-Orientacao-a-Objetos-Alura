@@ -77,3 +77,64 @@ public class Example {
     }
 }
 ```
+### PrintStream
+
+Java.io also supports a PrintStream class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+
+```java
+import java.io.PrintStream;
+import java.io.IOException;
+
+public class Example {
+    public static void main(String[] args) throws IOException {
+        PrintStream stream = new PrintStream("test.txt");
+        stream.println("Hello World!");
+        stream.close();
+    }
+}
+```
+
+### PrintWriter
+
+Java.io also supports a PrintWriter class that can be used to write to a file. It is designed to be used in a multi-threaded environment.
+
+```java
+import java.io.PrintWriter;
+import java.io.IOException;
+
+public class Example {
+    public static void main(String[] args) throws IOException {
+        PrintWriter writer = new PrintWriter("test.txt");
+        writer.println("Hello World!");
+        writer.close();
+    }
+}
+```
+### System.lineSeparator()
+
+Java.io also supports a System.lineSeparator() method that can be used to get the system's line separator.
+
+```java
+import java.io.System;
+
+public class Example {
+    public static void main(String[] args) {
+        String lineSeparator = System.lineSeparator();
+        System.out.println(lineSeparator);
+    }
+}
+```
+### System.currentTimeMillis()
+
+Java.io also supports a System.currentTimeMillis() method that can be used to get the system's current time in milliseconds.
+
+```java
+import java.io.System;
+
+public class Example {
+    public static void main(String[] args) {
+        long currentTime = System.currentTimeMillis();
+        System.out.println(currentTime);
+    }
+}
+```
