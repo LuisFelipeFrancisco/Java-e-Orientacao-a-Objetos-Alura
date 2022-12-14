@@ -8,7 +8,7 @@ public class PropertiesTest {
 
         Properties props = new Properties();
         props.setProperty("login", "google"); 
-        props.setProperty("password", "123456789321654987");
+        props.setProperty("password", "averylongpasswordthatnobodyknowsbecauseitsencrypted");
         props.setProperty("address", "www.google.com.br");
 
         props.store(new FileWriter("conf.properties"), "comment"); //must be .properties file
