@@ -132,3 +132,66 @@ public class Example {
     }
 }
 ```
+### Formatting
+
+Java.io supports the following formatting options:
+
+* `%b` - Boolean
+* `%c` - Character
+* `%d` - Integer
+* `%f` - Float
+* `%s` - String
+* `%%` - Percent sign
+* `%n` - New line
+* `%t` - Date and time
+* `%x` - Hexadecimal
+* `%o` - Octal
+* `%e` - Exponential
+
+More information about formatting can be found [here](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#syntax).
+
+
+All formatting options can be used with the following flags:
+
+* `+` - Always include a sign
+* `-` - Left justify
+* `0` - Pad with zeros
+* ` ` - Pad with spaces
+* `,` - Use locale specific grouping separators
+* `(` - Use parentheses for negative numbers
+* `#` - Use alternate form
+
+All formatting options can be used with the following width and precision options:
+
+* `width` - The minimum number of characters to be written to the output
+* `precision` - The maximum number of characters to be written to the output
+
+All formatting options can be used with the following date and time options:
+
+* `H` - Hour of the day for the 24-hour clock
+* `I` - Hour for the 12-hour clock
+* `k` - Hour of the day for the 24-hour clock
+* `l` - Hour for the 12-hour clock
+* `M` - Minute within the hour
+* `S` - Second within the minute
+* `L` - Millisecond within the second
+* `N` - Nanosecond within the second
+* `p` - Locale-specific morning or afternoon marker in lower case
+* `z` - RFC 822 time zone
+* `Z` - Time zone
+* `s` - Seconds since the beginning of the epoch
+* `Q` - Milliseconds since the beginning of the epoch
+
+### Formatting a string
+
+```java
+import java.io.PrintStream;
+
+public class Example {
+    public static void main(String[] args) {
+        PrintStream stream = new PrintStream("test.txt");
+        stream.format("Hello %s!", "World");
+        stream.close();
+    }
+}
+```

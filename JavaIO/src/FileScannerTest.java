@@ -25,6 +25,8 @@ public class FileScannerTest {
             int value3 = lineScanner.nextInt();
             String value4 = lineScanner.next();
             double value5 = lineScanner.nextDouble();
+
+            System.out.format("%s - %03d-%04d, %s, R$: %.2f %n", value1, value2, value3, value4, value5);
             
             System.out.println("Account type: " + value1);
             System.out.println("Agency: " + value2);
