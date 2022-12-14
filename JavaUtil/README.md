@@ -133,3 +133,35 @@ Lambda expressions are used primarily to define inline implementation of a funct
 ```java
 Test t = () -> System.out.println("Hello World");
 ```
+### Scanner
+
+Scanner is a class that can be used to get user input, and it is found in the java.util package.
+
+```java
+import java.util.Scanner; // Import the Scanner class
+
+class MyClass {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
+
+    String userName = myObj.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input
+  }
+}
+```
+### Locale
+
+Locale is a class that represents a specific geographical, political, or cultural region. It is used to get information about the country, language, or variant.
+
+```java
+import java.util.Locale;
+
+class MyClass {
+  public static void main(String[] args) {
+    Locale myLocale = Locale.getDefault();
+    System.out.println(myLocale.getDisplayCountry());
+    System.out.println(myLocale.getDisplayLanguage());
+  }
+}
+```
