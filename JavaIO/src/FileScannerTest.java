@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FileScannerTest {
     public static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(new File("accounts.csv"));
+        Scanner scanner = new Scanner(new File("accounts.csv"), "UTF-8");
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
