@@ -195,3 +195,34 @@ public class Example {
     }
 }
 ```
+
+### Encoding a string
+
+```java
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+
+public class Example {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        PrintStream stream = new PrintStream("test.txt", "UTF-8");
+        stream.println("Hello World!");
+        stream.close();
+    }
+}
+```
+
+### Serializing an object
+
+```java
+import java.io.ObjectOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Example {
+    public static void main(String[] args) throws IOException {
+        ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream("test.txt"));
+        stream.writeObject(new Person("John", "Doe"));
+        stream.close();
+    }
+}
+```

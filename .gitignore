@@ -39,3 +39,5 @@ replay_pid*
 *.csv
 
 *.properties
+
+*.bin
