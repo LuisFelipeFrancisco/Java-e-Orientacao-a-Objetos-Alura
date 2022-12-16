@@ -1,6 +1,8 @@
 package models;
 
-public class Holder {
+import java.io.Serializable;
+
+public class Holder implements Serializable{
     private String name;
     private String cpf;
     private String profession;
