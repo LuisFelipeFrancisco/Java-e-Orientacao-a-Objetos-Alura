@@ -1,5 +1,7 @@
 package models;
 
+import java.io.Serializable;
+
 /**
  * This class represents an account in a bank.
  * 
@@ -7,7 +9,7 @@ package models;
  * @version 1.0.0
  * @since 1.0.0
  */
-public abstract class Account implements Comparable<Account> {
+public abstract class Account implements Comparable<Account>, Serializable {
 
 	protected double balance;
 	private int agency;

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+import models.CheckingAccount;
 import models.Holder;
 
 public class TestSerializing {
@@ -18,17 +19,25 @@ public class TestSerializing {
         client.setCpf("123.456.789-00");
         client.setProfession("Software Engineer");
 
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("client.ser"));
-        oos.writeObject(client);
+        CheckingAccount checkingAccount = new CheckingAccount(123, 321);
+        checkingAccount.setHolder(client);
+        checkingAccount.deposit(500);
+
+        System.out.println("Serializing the account...");
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("checkingAccount.bin"));
+        oos.writeObject(checkingAccount);
         oos.close();
 
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("client.ser"));
-        Holder holder = (Holder) ois.readObject();
+        System.out.println("Deserializing the account...");
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("checkingAccount.bin"));
+        CheckingAccount account = (CheckingAccount) ois.readObject();
         ois.close();
 
-        System.out.println(holder.getName());
-        System.out.println(holder.getCpf());
-        System.out.println(holder.getProfession());
+        System.out.println("Account deserialized:");
+        System.out.println("Holder:  " + account.holder.getName());
+        System.out.println("Agency:  " + account.getAgency());
+        System.out.println("Account: " + account.getNumber());
+        System.out.println("Balance: " + account.getBalance());
 
     }
     
