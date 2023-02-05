@@ -50,4 +50,8 @@ public class Course {
         public Set<Student> getStudents() {
             return Collections.unmodifiableSet(students);
         }
+
+        public boolean isStudentEnrolled(Student student) {
+            return this.students.contains(student);
+        }
 }

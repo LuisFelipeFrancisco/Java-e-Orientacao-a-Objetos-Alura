@@ -29,7 +29,7 @@ public class TestCourses {
 
         System.out.println("-------------------------------------------------");
 
-        Student student1 = new Student("Student 1", 12345);
+        Student student1 = new Student("Felipe", 12345);
         Student student2 = new Student("Student 2", 54321);
         Student student3 = new Student("Student 3", 67890);
 
@@ -41,6 +41,12 @@ public class TestCourses {
         javaCollections.getStudents().forEach(student -> {
             System.out.println(student);
         });
+
+        Student felipe = new Student("Felipe", 12345);
+        System.out.println("Felipe is enrolled? " + javaCollections.isStudentEnrolled(felipe));
+
+        System.out.println("Felipe equals Felipe? " + felipe.equals(student1));
+
     }
     
 }
