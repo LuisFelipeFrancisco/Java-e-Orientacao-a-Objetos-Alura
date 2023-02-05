@@ -1,9 +1,11 @@
-package br.com.alura;
+package br.com.alura.models;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Course {
@@ -12,6 +14,7 @@ public class Course {
         private String instructor;
         private List<Lesson> lessons = new ArrayList<>();
         private Set<Student> students = new HashSet<>();
+        private Map<Integer, Student> matriculationIndex = new HashMap<>();
     
         public Course(String name, String instructor) {
             this.name = name;
@@ -45,6 +48,7 @@ public class Course {
 
         public void enroll(Student student) {
             this.students.add(student);
+            this.matriculationIndex.put(student.getNumber(), student);
         }
 
         public Set<Student> getStudents() {
@@ -53,5 +57,9 @@ public class Course {
 
         public boolean isStudentEnrolled(Student student) {
             return this.students.contains(student);
+        }
+
+        public Student searchStudent(int number) {
+            return this.matriculationIndex.get(number);
         }
 }

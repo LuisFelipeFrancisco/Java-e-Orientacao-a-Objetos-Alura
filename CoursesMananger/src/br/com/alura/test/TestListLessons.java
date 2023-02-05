@@ -1,8 +1,10 @@
-package br.com.alura;
+package br.com.alura.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+
+import br.com.alura.models.Lesson;
 
 public class TestListLessons {
 

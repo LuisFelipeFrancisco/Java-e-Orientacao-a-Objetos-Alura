@@ -1,8 +1,12 @@
-package br.com.alura;
+package br.com.alura.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import br.com.alura.models.Course;
+import br.com.alura.models.Lesson;
+import br.com.alura.models.Student;
 
 public class TestCourses {
     public static void main(String[] args) {
