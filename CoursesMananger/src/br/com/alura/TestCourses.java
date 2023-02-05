@@ -27,6 +27,20 @@ public class TestCourses {
 
         System.out.println(javaCollections);
 
+        System.out.println("-------------------------------------------------");
+
+        Student student1 = new Student("Student 1", 12345);
+        Student student2 = new Student("Student 2", 54321);
+        Student student3 = new Student("Student 3", 67890);
+
+        javaCollections.enroll(student1);
+        javaCollections.enroll(student2);
+        javaCollections.enroll(student3);
+
+        System.out.println("Students enrolled: ");
+        javaCollections.getStudents().forEach(student -> {
+            System.out.println(student);
+        });
     }
     
 }
