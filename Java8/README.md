@@ -6,6 +6,8 @@
 - [x] 2. Lambda
 - [x] 3. Method References
 - [x] 4. Streams
+- [x] 5. Optional
+- [x] 6. Date and Time API
 
 ### Default Methods
 
@@ -107,3 +109,23 @@ public class Main {
 
 Streams are used to process collections of objects. They are useful when you want to process a collection of objects.
 
+### Optional
+
+Optional is a container object used to contain not-null objects. They are useful when you want to avoid NullPointerException.
+
+### Collectors
+
+Collectors are used to combine the result of processing on the elements of a stream. They are useful when you want to combine the result of processing on the elements of a stream.
+
+### Date and Time API
+
+The Date and Time API is used to work with date and time in Java. They are useful when you want to work with date and time in Java.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+    }
+}
+```
