@@ -7,8 +7,3 @@ TDD is a software development process that relies on the repetition of a very sh
 ### What is JUnit?
 
 JUnit is a unit testing framework for the Java programming language. JUnit has been important in the development of test-driven development, and is one of a family of unit testing frameworks which is collectively known as xUnit that originated with SUnit.
-
-### What is the purpose of this repository?
-
-This repository is a collection of examples of TDD and JUnit. It is intended to be used as a reference for those who are new to TDD and JUnit.
-
