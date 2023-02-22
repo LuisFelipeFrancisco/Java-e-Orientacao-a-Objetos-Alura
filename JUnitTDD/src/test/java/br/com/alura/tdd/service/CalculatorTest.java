@@ -1,9 +1,10 @@
-package tests;
+package br.com.alura.tdd.service;
 
-import org.junit.Test;
-import org.junit.Assert;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import models.Calculator;
+import org.junit.jupiter.api.Test;
+
+import br.com.alura.tdd.modelo.Calculator;
 
 public class CalculatorTest {
 
@@ -12,7 +13,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.add(3, 7);
         
-        Assert.assertEquals(10, result);
+        assertEquals(10, result);
     }
 
     @Test
@@ -20,7 +21,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.add(0, 0);
 
-        Assert.assertEquals(0, result);
+        assertEquals(0, result);
     }
 
     @Test
@@ -28,7 +29,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.add(-3, 7);
 
-        Assert.assertEquals(4, result);
+        assertEquals(4, result);
     }
     
 }
@@ -46,7 +47,7 @@ public class CalculatorTest {
  * 3. Test methods must not return a value.
  * ...
  * 
- * Assert. methods:
+ * assert. methods:
  * 1. assertEquals(expected, actual)
  * 2. assertTrue(boolean)
  * 3. assertFalse(boolean)

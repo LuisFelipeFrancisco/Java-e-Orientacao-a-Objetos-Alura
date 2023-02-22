@@ -1,7 +1,8 @@
-package tests;
-import models.Calculator;
+package br.com.alura.tdd.service;
 
-public class TestsCalculator {
+import br.com.alura.tdd.modelo.Calculator;
+
+public class TestCalculator {
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();

@@ -1,4 +1,4 @@
-package models;
+package br.com.alura.tdd.modelo;
 
 public class Calculator {
 
